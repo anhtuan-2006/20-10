@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#050912">
+  <title>A little gift for you — 20/10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-stage="0">
+  <!-- Lớp trang trí luôn tồn tại giữa các phần -->
+  <div class="ambient-glow glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow glow-two" aria-hidden="true"></div>
+  <div class="star-field" id="starField" aria-hidden="true"></div>
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+
+  <main id="experience" aria-label="Món quà ngày Phụ nữ Việt Nam">
+    <!-- PHẦN 0: MÀN HÌNH MỞ ĐẦU -->
+    <section class="screen intro-screen" id="intro" aria-label="Mở đầu">
+      <div class="intro-content">
+        <span class="intro-kicker">Một điều nhỏ bé dành tặng cậu</span>
+        <h1 class="intro-title">Dear to <span id="nameDisplay">Mai Phương</span></h1>
+        <span class="intro-line" aria-hidden="true"></span>
+      </div>
+      <p class="tap-hint intro-hint">chạm nhẹ vào màn hình để bắt đầu <span>✦</span></p>
+    </section>
+
+
+    <!-- PHẦN 1 MỚI: MỘT VŨ TRỤ DÀNH RIÊNG CHO EM -->
+    <section class="screen universe-screen" id="universe" aria-label="Một vũ trụ dành riêng cho em">
+      <div class="universe-nebula nebula-a" aria-hidden="true"></div>
+      <div class="universe-nebula nebula-b" aria-hidden="true"></div>
+      <div class="universe-core-glow" aria-hidden="true"></div>
+      <div class="universe-halo-ring halo-ring-a" aria-hidden="true"></div>
+      <div class="universe-halo-ring halo-ring-b" aria-hidden="true"></div>
+      <div class="universe-comet comet-a" aria-hidden="true"></div>
+      <div class="universe-comet comet-b" aria-hidden="true"></div>
+      <svg class="universe-constellation" viewBox="0 0 720 540" role="img" aria-label="Những vì sao kết thành trái tim">
+        <defs>
+          <radialGradient id="universeStarGlow">
+            <stop offset="0" stop-color="#f7ffff" stop-opacity="1"/>
+            <stop offset=".35" stop-color="#83f5ff" stop-opacity=".95"/>
+            <stop offset="1" stop-color="#83f5ff" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="universeLineGlow" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#65f5ff" stop-opacity=".22"/>
+            <stop offset=".55" stop-color="#9afaff" stop-opacity=".88"/>
+            <stop offset="1" stop-color="#ff8fcf" stop-opacity=".72"/>
+          </linearGradient>
+        </defs>
+        <ellipse class="universe-orbit orbit-one" cx="360" cy="270" rx="258" ry="166"/>
+        <ellipse class="universe-orbit orbit-two" cx="360" cy="270" rx="188" ry="246" transform="rotate(-24 360 270)"/>
+        <ellipse class="universe-orbit orbit-three" cx="360" cy="270" rx="292" ry="95" transform="rotate(18 360 270)"/>
+        <ellipse class="universe-orbit orbit-four" cx="360" cy="270" rx="224" ry="286" transform="rotate(33 360 270)"/>
+        <g class="constellation-core" transform="translate(360 270) scale(1.16) translate(-360 -270)">
+          <path class="constellation-side-lines" d="M270 165 L248 112 L310 98 L360 128 L438 116 L463 164 M208 214 L164 184 L144 270 L188 369 L248 300 M463 164 L552 139 L584 217 L544 356 L466 302 M300 331 L282 399 L360 386 L438 432 L418 330"/>
+          <path class="constellation-lines" d="M208 214 L270 165 L328 205 L360 128 L404 202 L463 164 L512 232 L466 302 L418 330 L360 386 L300 331 L248 300 L208 214 M270 165 L300 331 M328 205 L418 330 M404 202 L360 386 M463 164 L466 302 M248 300 L360 386"/>
+          <path class="constellation-energy" d="M208 214 L270 165 L328 205 L360 128 L404 202 L463 164 L512 232 L466 302 L418 330 L360 386 L300 331 L248 300 L208 214 M270 165 L300 331 M328 205 L418 330 M404 202 L360 386 M463 164 L466 302 M248 300 L360 386"/>
+          <path class="constellation-heart" d="M360 291 C337 266 296 239 296 205 C296 176 333 165 360 199 C387 165 424 176 424 205 C424 239 383 266 360 291Z"/>
+          <g class="constellation-points">
+            <circle cx="208" cy="214" r="13"/><circle cx="270" cy="165" r="17"/><circle cx="328" cy="205" r="11"/>
+            <circle cx="360" cy="128" r="20"/><circle cx="404" cy="202" r="14"/><circle cx="463" cy="164" r="16"/>
+            <circle cx="512" cy="232" r="12"/><circle cx="466" cy="302" r="18"/><circle cx="418" cy="330" r="11"/>
+            <circle cx="360" cy="386" r="17"/><circle cx="300" cy="331" r="12"/><circle cx="248" cy="300" r="15"/>
+            <circle cx="248" cy="112" r="7"/><circle cx="310" cy="98" r="6"/><circle cx="438" cy="116" r="8"/>
+            <circle cx="552" cy="139" r="6"/><circle cx="584" cy="217" r="8"/><circle cx="544" cy="356" r="6"/>
+            <circle cx="282" cy="399" r="7"/><circle cx="438" cy="432" r="8"/><circle cx="164" cy="184" r="6"/>
+          </g>
+          <g class="constellation-dots">
+            <circle cx="144" cy="270" r="3"/><circle cx="560" cy="182" r="4"/><circle cx="544" cy="356" r="3"/>
+            <circle cx="188" cy="369" r="4"/><circle cx="342" cy="78" r="3"/><circle cx="438" cy="432" r="4"/>
+            <circle cx="230" cy="92" r="3"/><circle cx="490" cy="95" r="3"/><circle cx="603" cy="294" r="3"/>
+            <circle cx="322" cy="462" r="4"/><circle cx="174" cy="330" r="3"/><circle cx="408" cy="62" r="3"/>
+            <circle cx="532" cy="407" r="4"/><circle cx="276" cy="445" r="3"/><circle cx="116" cy="218" r="3"/>
+          </g>
+        </g>
+        <g class="universe-satellite satellite-a">
+          <circle class="satellite-halo" cx="610" cy="270" r="18"/>
+          <circle class="satellite-core" cx="610" cy="270" r="5"/>
+          <path class="satellite-tail" d="M586 270 L600 270"/>
+        </g>
+        <g class="universe-satellite satellite-b" transform="rotate(28 360 270)">
+          <circle class="satellite-halo" cx="360" cy="48" r="13"/>
+          <circle class="satellite-core" cx="360" cy="48" r="3.5"/>
+        </g>
+      </svg>
+      <div class="universe-content">
+        <span class="scene-kicker">ONE UNIVERSE, ONE YOU</span>
+        <h2>Gửi cho cậu <em>cả ngàn vì sao</em></h2>
+        <p>Còn cậu là vì sao đẹp nhất trong vũ trụ của tớ.</p>
+      </div>
+      <span class="universe-floating floating-heart heart-a" aria-hidden="true">♡</span>
+      <span class="universe-floating floating-heart heart-b" aria-hidden="true">♡</span>
+      <span class="universe-floating floating-star star-a" aria-hidden="true">✦</span>
+      <span class="universe-floating floating-star star-b" aria-hidden="true">✧</span>
+      <p class="tap-hint universe-hint">chạm để những vì sao kể tiếp <span>✦</span></p>
+    </section>
+
+    <!-- PHẦN 1: HOA NEON VÀ 6 KHUNG ẢNH
+         Thay src của photo-1.svg ... photo-6.svg bằng ảnh của hai bạn -->
+    <section class="screen gallery-screen" id="gallery" aria-label="Happy Women's Day">
+      <div class="gallery-heading">
+        <span class="heading-overline">20/10 - For you</span>
+        <h2><span>Happy Women's Day</span></h2>
+        <p>Dành tặng cho cô gái đáng yêu nhất thế giới!</p>
+      </div>
+
+      <div class="bouquet-wrap" aria-hidden="true">
+        <div class="bouquet-halo"></div>
+        <img class="bouquet" src="assets/decor/neon-bouquet.svg" alt="">
+        <span class="bouquet-spark spark-a">✦</span>
+        <span class="bouquet-spark spark-b">✧</span>
+        <span class="bouquet-spark spark-c">✦</span>
+      </div>
+
+      <figure class="photo-card photo-1">
+        <span class="photo-pin"></span>
+        <img src="assets/photos/Anh1.jpg" alt="Ảnh kỷ niệm số 1">
+        <figcaption>Đáng yêu ♡</figcaption>
+      </figure>
+      <figure class="photo-card photo-2">
+        <span class="photo-pin"></span>
+        <img src="assets/photos/Anh5.jpg" alt="Ảnh kỷ niệm số 2">
+        <figcaption>Xinh đẹp</figcaption>
+      </figure>
+      <figure class="photo-card photo-3">
+        <span class="photo-pin"></span>
+        <img src="assets/photos/Anh3.jpg" alt="Ảnh kỷ niệm số 3">
+        <figcaption>Chăm chỉ</figcaption>
+      </figure>
+      <figure class="photo-card photo-4">
+        <span class="photo-pin"></span>
+        <img src="assets/photos/Anh4.jpg" alt="Ảnh kỷ niệm số 4">
+        <figcaption>Ngoan ngoãn</figcaption>
+      </figure>
+      <figure class="photo-card photo-5">
+        <span class="photo-pin"></span>
+        <img src="assets/photos/Anh2.jpg" alt="Ảnh kỷ niệm số 5">
+        <figcaption>Cứng đầu</figcaption>
+      </figure>
+      <figure class="photo-card photo-6">
+        <span class="photo-pin"></span>
+        <img src="assets/photos/Anh6.jpg" alt="Ảnh kỷ niệm số 6">
+        <figcaption>Baby</figcaption>
+      </figure>
+
+      <p class="tap-hint gallery-hint">chạm để đọc một điều tớ muốn gửi tới cậu <span>↓</span></p>
+    </section>
+
+
+    <!-- PHẦN 3 MỚI: NHỮNG MẢNH GHÉP VỀ CHÚNG MÌNH -->
+    <section class="screen memories-screen" id="memories" aria-label="Những mảnh ghép về chúng mình">
+      <div class="memories-heading">
+        <span class="scene-kicker">OUR LITTLE UNIVERSE</span>
+        <h2>Những mảnh ghép <em>về chúng mình</em></h2>
+        <p>Những khoảnh khắc nhỏ, nhưng ở lại trong tim rất lâu.</p>
+      </div>
+      <div class="memory-grid">
+        <article class="memory-card memory-one">
+          <div class="memory-photo"><img src="assets/photos/Anh7.jpg" alt="Khung ảnh kỷ niệm thứ nhất"><span>♡</span></div>
+          <p class="memory-index">01 · Khoảnh khắc nhỏ</p>
+          <p class="memory-caption">Tay không to nhưng lại có thể che chở cả thế giới.</p>
+        </article>
+        <article class="memory-card memory-two">
+          <div class="memory-photo"><img src="assets/photos/Anh9.jpg" alt="Khung ảnh kỷ niệm thứ hai"><span>✦</span></div>
+          <p class="memory-index">02 · Chăm sóc</p>
+          <p class="memory-caption">Làm cậu vui cũng chính là tự làm tớ thấy hài lòng.</p>
+        </article>
+        <article class="memory-card memory-three">
+          <div class="memory-photo"><img src="assets/photos/Anh8.jpg" alt="Khung ảnh kỷ niệm thứ ba"><span>♡</span></div>
+          <p class="memory-index">03 · Bên nhau</p>
+          <p class="memory-caption">Từng giây phút gặp nhau đều trở nên đáng nhớ, khả năng cao là do thiếu hơi.</p>
+        </article>
+        <article class="memory-card memory-four">
+          <div class="memory-photo"><img src="assets/photos/Anh10.jpg" alt="Khung ảnh kỷ niệm thứ tư"><span>✧</span></div>
+          <p class="memory-index">04 · Dịp đặc biệt</p>
+          <p class="memory-caption">Ý là lúc nào cũng có quà nên tự nhiên dịp đặc biệt quà nó phải đặc biệt hơn ấy chứ hì hì hì.</p>
+        </article>
+      </div>
+      <p class="tap-hint memories-hint">chạm để mở món quà tiếp theo <span>↓</span></p>
+    </section>
+
+    <!-- PHẦN 2, 3, 4: PHONG THƯ ĐÓNG / MỞ / ĐÓNG LẠI -->
+    <section class="screen letter-screen" id="letterScreen" aria-label="Bức thư">
+      <div class="letter-intro" id="letterIntro">
+        <span class="letter-kicker">sealed with love</span>
+        <p>Một lá thư nhỏ gửi tới cô gái của tớ</p>
+      </div>
+
+      <div class="envelope-wrap" id="envelopeWrap" aria-label="Phong thư">
+        <div class="envelope-back"></div>
+        <article class="paper" id="paper" tabindex="0" aria-label="Lá thư dài, cuộn xuống để đọc tiếp">
+          <div class="paper-inner" id="paperInner">
+            <div class="paper-date">20.10 <span>♡</span></div>
+            <h2>Gửi cậu,</h2>
+            <p class="letter-line">Hôm nay là ngày 20/10, và tớ muốn dành cho cậu một điều gì đó không chỉ gói gọn trong vài câu chúc ngắn ngủi. Tớ đã nghĩ rất lâu xem nên viết gì, bởi có những cảm xúc khi ở trong lòng thì tưởng như thật rõ ràng, nhưng đến lúc đặt bút xuống lại chẳng biết bắt đầu từ đâu. Cuối cùng, tớ nghĩ mình cứ viết thật lòng là được. Đây là một lá thư nhỏ, dành riêng cho cậu, để cậu có thể đọc chậm rãi vào bất cứ lúc nào cậu muốn.</p>
+            <p class="letter-line">Trước hết, chúc cô gái của tớ có một ngày 20/10 thật dịu dàng. Tớ mong hôm nay cậu sẽ có được nhiều nụ cười và những điều khiến trái tim cậu vui lên. Nhưng tớ cũng mong rằng niềm vui ấy sẽ không chỉ ở lại trong một ngày. Cậu xứng đáng được yêu thương, được trân trọng và được đối xử bằng sự tử tế trong cả những ngày bình thường nhất, kể cả những ngày chẳng có dịp gì đặc biệt để mọi người nhắc cậu rằng cậu quan trọng đến nhường nào.</p>
+            <p class="letter-line">Tớ thích những điều rất nhỏ ở cậu. Là cách cậu kể một câu chuyện chẳng có gì to tát nhưng vẫn khiến tớ muốn nghe đến cuối; cách cậu vui vì một điều xinh xắn; hay một khoảnh khắc cậu vô tình nói ra điều gì đó khiến tớ bật cười một mình. Đôi khi, chính những điều bình thường ấy lại ở lại trong tớ lâu hơn cả những khoảnh khắc thật lớn lao. Cậu có thể không nhận ra, nhưng sự hiện diện của cậu đã khiến nhiều ngày của tớ trở nên đáng nhớ hơn.</p>
+            <p class="letter-line">Tớ không nghĩ tình cảm chỉ được tạo nên từ những lời nói đẹp. Với tớ, nó còn nằm trong việc nhớ đến nhau giữa một ngày bận rộn, hỏi han nhau sau một ngày dài, kiên nhẫn lắng nghe khi người kia cần được sẻ chia và cùng tìm cách giải quyết những điều chưa vui. Tớ muốn mình có thể làm được những điều ấy cho cậu và cũng muốn cậu có thể làm được những điều ấy cho tớ, không phải để chứng minh điều gì, mà vì tớ thật sự muốn cậu cảm thấy rằng bên cạnh cậu có một người quan tâm đến những gì cậu đang trải qua.</p>
+            <p class="letter-line">Tớ biết mình không phải lúc nào cũng hoàn hảo. Có khi tớ vụng về, có khi chưa hiểu hết điều cậu muốn nói, có khi nghĩ rằng mình đã thể hiện đủ nhưng cậu lại chưa cảm nhận được. Nếu có lúc như vậy, tớ mong chúng mình có thể nói với nhau bằng sự chân thành và dịu dàng. Tớ muốn học cách lắng nghe cậu tốt hơn, hiểu cậu nhiều hơn và sửa những điều mình có thể sửa. Tớ không muốn chỉ nói những lời thật hay trong một lá thư, mà còn muốn để những ngày sau này trả lời thay cho tớ bằng hành động.</p>
+            <p class="letter-line">Tớ mong cậu luôn giữ được những điều làm nên chính cậu: những ước mơ, sở thích, cá tính, sự tò mò và cả những nét riêng mà đôi khi cậu nghĩ chẳng có gì đặc biệt. Cậu không cần phải trở thành một phiên bản khác để được yêu quý. Cậu cũng không cần lúc nào cũng mạnh mẽ, vui vẻ hay tỏ ra rằng mọi thứ đều ổn. Những ngày cậu tự tin, tớ mong được cùng cậu vui; những ngày cậu mệt mỏi, tớ mong có thể ngồi cạnh cậu, nghe cậu kể và để cậu được nghỉ ngơi mà không phải cố gắng tỏ ra ổn hơn thực tế.</p>
+            <p class="letter-line">Nếu có hôm nào cậu thấy mình làm chưa đủ tốt, mong cậu đừng vội phủ nhận tất cả những điều cậu đã cố gắng. Ai cũng có những ngày chậm chạp, những lúc hoang mang và những việc phải thử đi thử lại mới làm được. Cậu có quyền mắc lỗi, có quyền thay đổi suy nghĩ và có quyền dành thời gian để tìm ra điều mình thật sự muốn. Tớ hy vọng cậu sẽ luôn đối xử với bản thân bằng sự bao dung mà cậu vẫn dành cho những người cậu thương. Cậu cũng xứng đáng nhận được sự dịu dàng từ chính mình.</p>
+            <p class="letter-line">Tớ thích khi chúng mình có thể chia sẻ với nhau cả chuyện vui lẫn những điều chẳng dễ kể. Tớ muốn được biết điều gì làm cậu hào hứng, điều gì khiến cậu lo lắng, những dự định cậu đang ấp ủ và cả những chuyện nhỏ nhặt xảy ra trong ngày. Không phải vì tớ cần biết mọi thứ, mà vì tớ muốn hiểu thế giới của cậu thêm một chút mỗi ngày. Và tớ cũng mong mình có thể kể cho cậu nghe về thế giới của tớ, để chúng mình không chỉ ở cạnh nhau trong những khoảnh khắc vui vẻ mà còn có thể đồng hành trong những ngày không dễ dàng.</p>
+            <p class="letter-line">Có thể chúng mình sẽ có những lúc không đồng ý, hiểu nhầm hoặc vô tình làm người kia buồn. Tớ không mong mọi chuyện lúc nào cũng suôn sẻ, bởi chẳng có mối quan hệ nào chỉ toàn những ngày nắng đẹp. Điều tớ mong là khi có vấn đề, chúng mình đừng vội xem nhau là đối thủ. Hãy cùng nhìn về phía vấn đề, NÓI RÕ ĐIỀU MÌNH CẢM THẤY VÀ CHO NHAU CƠ HỘI ĐỂ GIẢI THÍCH. Tớ tin sự chân thành không có nghĩa là không bao giờ mắc lỗi; chân thành còn là dám nhận lỗi, biết xin lỗi và thật sự cố gắng để lần sau làm tốt hơn.</p>
+            <p class="letter-line">Cảm ơn cậu vì đã bước vào cuộc sống của tớ và mang đến những cảm xúc thật đặc biệt. Cảm ơn cậu vì những lần dành thời gian cho tớ, vì những câu chuyện cậu kể, vì những khoảnh khắc chúng mình cùng cười và cả vì những điều cậu có thể đã làm mà không hề biết rằng chúng quan trọng với tớ đến thế. Tớ trân trọng từng kỷ niệm mà chúng mình đã có, dù đó là một ngày đáng nhớ hay chỉ là vài phút trò chuyện bình thường. Khi gom những điều nhỏ bé ấy lại, tớ nhận ra chúng đã tạo thành một phần rất đẹp trong những ngày của mình.</p>
+            <p class="letter-line">Ngày 20/10, tớ muốn chúc cậu không chỉ xinh đẹp theo cách người khác nhìn thấy, mà còn luôn cảm thấy bình yên trong lòng. Chúc cậu có đủ sức khỏe để theo đuổi điều mình thích, đủ tự tin để bước qua những thử thách và đủ kiên nhẫn với những ước mơ cần thời gian. Chúc cậu luôn gặp được những người biết tôn trọng cậu, những cơ hội phù hợp với cậu và những niềm vui đến từ cả các điều lớn lao lẫn những chuyện rất bình thường. Mong những điều tốt đẹp tìm đến cậu nhiều hơn, nhưng nếu có ngày chưa được như ý, mong cậu vẫn nhớ rằng mình có thể bắt đầu lại.</p>
+            <p class="letter-line">Tớ cũng chúc cậu luôn có những góc nhỏ dành riêng cho bản thân: một bài hát khiến cậu thấy dễ chịu, một món ăn cậu thích, một cuốn phim muốn xem, một nơi muốn ghé qua hay đơn giản là một buổi tối được nghỉ ngơi thật thoải mái. Tớ mong cậu không phải lúc nào cũng chạy theo lịch trình hoặc cố làm hài lòng tất cả mọi người. Đôi khi, chỉ cần dừng lại một chút, hít thở thật sâu và làm điều khiến mình vui cũng đã là một cách chăm sóc bản thân rồi. Cậu không cần phải làm mọi thứ thật xuất sắc mới xứng đáng được nghỉ ngơi.</p>
+            <p class="letter-line">Nếu có thể gửi cậu một điều qua lá thư này, thì tớ muốn cậu biết rằng tình cảm của tớ không chỉ dành cho hình ảnh rạng rỡ nhất của cậu. Tớ yêu cả những lúc cậu vui vẻ lẫn lúc cậu trầm ngâm, cả những ngày cậu có thật nhiều năng lượng lẫn những hôm cậu chỉ muốn chậm lại. Tớ muốn hiểu con người thật của cậu, với những suy nghĩ, cảm xúc và thay đổi theo thời gian. Tớ không thể biết trước mọi chuyện sau này, nhưng tớ có thể lựa chọn cách mình cư xử hôm nay: tôn trọng cậu, quan tâm đến cậu và luôn cố gắng để tình cảm này trở thành một điều ấm áp trong cuộc sống của cả hai.</p>
+            <p class="letter-line">Tớ hy vọng trong những ngày bận rộn, chúng mình vẫn nhớ dành cho nhau một chút thời gian. Không nhất thiết phải là những cuộc trò chuyện dài hay những món quà thật đặc biệt. Đôi khi, một lời hỏi han đúng lúc, một câu chuyện ngắn trước khi ngủ hoặc một tin nhắn kể rằng hôm nay có chuyện gì vui cũng đủ làm ngày dài dịu lại. Tớ muốn chúng mình tích góp những khoảnh khắc như thế, chậm rãi thôi, để tình cảm được nuôi dưỡng bằng sự quan tâm thật sự chứ không chỉ bằng những dịp kỷ niệm trên lịch.</p>
+            <p class="letter-line">Nếu một ngày cậu đọc lại những dòng này, có thể tâm trạng của cậu đã khác hôm nay, và cuộc sống của chúng mình cũng sẽ có thêm nhiều thay đổi. Tớ mong khi ấy cậu vẫn có thể mỉm cười với lá thư này. Có thể vài câu chữ sẽ hơi ngốc nghếch, có thể cách tớ diễn đạt còn vụng về, nhưng mọi điều ở đây đều được viết với mong muốn làm cậu vui. Tớ không cần lá thư phải thật hoàn hảo; tớ chỉ mong nó khiến cậu cảm nhận được rằng đã có một người ngồi xuống, nghĩ về cậu thật lâu và muốn dành tặng cậu một điều chỉ riêng cậu có.</p>
+            <p class="letter-line">Vậy nên, hôm nay hãy nhận lấy lời chúc này cùng tất cả sự dịu dàng mà tớ muốn gửi đến cậu. Mong cậu ăn ngon, ngủ đủ, cười nhiều, gặp được những điều dễ thương và có thêm thật nhiều lý do để yêu cuộc sống của mình. Mong những lúc nhìn lại chặng đường đã qua, cậu có thể tự hào vì bản thân đã cố gắng đến thế nào. Và mong trong những ngày sắp tới, cậu vẫn sẽ tiếp tục khám phá, trưởng thành, làm những điều mình yêu thích và giữ lại trong tim những niềm vui nhỏ bé nhưng chân thật.</p>
+            <p class="letter-line">Cuối cùng, cảm ơn cậu vì đã là cậu. Cảm ơn vì đã cho tớ cơ hội được quan tâm, được lắng nghe và được góp một phần nhỏ vào những câu chuyện của cậu. Tớ mong món quà này có thể khiến cậu vui một chút, giống như cách cậu đã làm cho nhiều ngày của tớ trở nên đặc biệt mà có lẽ cậu chẳng hề hay biết. Chúc cậu một ngày 20/10 thật ngọt ngào, một tháng mười thật ấm áp và thật nhiều ngày bình yên ở phía trước. Đọc đến đây rồi thì nhớ mỉm cười một cái nhé, vì nụ cười của cậu là một trong những điều tớ rất thích.</p>
+            <p class="letter-line">Một chút tinh tế được tớ cài cắm ở góc dưới bên phải màn hình. Tớ yêu cậu rất nhiều!</p>
+            <p class="letter-sign">Anh Tuan <span>♡</span></p>
+          </div>
+        </article>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-seal"><span>♡</span></div>
+      </div>
+      <p class="tap-hint letter-hint" id="letterHint">chạm để mở thư <span>♡</span></p>
+    </section>
+
+
+    <!-- PHẦN 8 MỚI: LỜI NHẮN CHỈ DÀNH RIÊNG CHO CẬU -->
+    <section class="screen secret-screen" id="secretNote" aria-label="Một lời nhắn chỉ dành riêng cho em">
+      <div class="secret-content">
+        <span class="scene-kicker">JUST BETWEEN YOU AND ME</span>
+        <div class="secret-heart-orbit" aria-hidden="true">
+          <span class="secret-orbit-ring ring-a"></span>
+          <span class="secret-orbit-ring ring-b"></span>
+          <span class="secret-heart">♡</span>
+          <span class="secret-mini-star mini-one">✦</span>
+          <span class="secret-mini-star mini-two">✧</span>
+        </div>
+        <p class="secret-prelude">Trước khi món quà này khép lại...</p>
+        <h2>Lời nhắn <em>chỉ dành riêng cho bbi</em></h2>
+        <p class="secret-quote">Nếu được chọn một điều để giữ lại giữa thế giới rộng lớn này, anh vẫn mong đó là những ngày có em — những ngày rất bình thường thôi, nhưng đủ khiến anh mỉm cười khi nhớ lại.</p>
+        <p class="secret-signature">Chắc chắn em sẽ được yêu thương và không được quên rằng đối với anh, em rất đặc biệt. <span>♡</span></p>
+      </div>
+      <p class="tap-hint secret-hint">chạm để đến lời kết <span>♡</span></p>
+    </section>
+
+    <!-- PHẦN 5: KẾT THÚC -->
+    <section class="screen ending-screen" id="ending" aria-label="Kết thúc">
+      <div class="ending-content">
+        <span class="ending-star star-left">✧</span>
+        <h2>The End<span>.</span></h2>
+        <p class="ending-message">Code by: _anhtuan._206</p>
+        <div class="ending-heart">♡</div>
+      </div>
+      <p class="tap-hint ending-hint">chạm để xem lại từ đầu <span>↺</span></p>
+    </section>
+  </main>
+
+  <div class="scene-counter" id="sceneCounter" aria-hidden="true"><span id="counterCurrent">00</span><i></i><span>08</span></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

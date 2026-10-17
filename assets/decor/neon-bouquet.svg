@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" fill="none">
+  <defs>
+    <linearGradient id="stem" x1="250" y1="180" x2="250" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9FFFF"/><stop offset=".48" stop-color="#39DFFF"/><stop offset="1" stop-color="#1676CB"/>
+    </linearGradient>
+    <linearGradient id="petalCyan" x1="0" y1="-35" x2="0" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2FFFF"/><stop offset=".28" stop-color="#8BFFFF"/><stop offset=".68" stop-color="#36DDFB"/><stop offset="1" stop-color="#2587F4"/>
+    </linearGradient>
+    <linearGradient id="petalPink" x1="0" y1="-28" x2="0" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8FD"/><stop offset=".35" stop-color="#FFBDE5"/><stop offset=".76" stop-color="#FF82D0"/><stop offset="1" stop-color="#CE6DF9"/>
+    </linearGradient>
+    <linearGradient id="petalBlue" x1="-22" y1="-25" x2="22" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F9FF"/><stop offset=".42" stop-color="#73C9FF"/><stop offset="1" stop-color="#5C78FA"/>
+    </linearGradient>
+    <linearGradient id="wrap" x1="120" y1="370" x2="370" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17688C" stop-opacity=".82"/><stop offset=".48" stop-color="#0A2948" stop-opacity=".94"/><stop offset="1" stop-color="#143F76" stop-opacity=".88"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="195" y1="480" x2="310" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB9E2"/><stop offset=".5" stop-color="#FF79CF"/><stop offset="1" stop-color="#B968F8"/>
+    </linearGradient>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="4.2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <g id="flowerCyan">
+      <g fill="url(#petalCyan)" stroke="#BDFDFF" stroke-width="1.15" filter="url(#glow)">
+        <ellipse cy="-20" rx="10.5" ry="22"/><ellipse cy="-20" rx="10.5" ry="22" transform="rotate(45)"/>
+        <ellipse cy="-20" rx="10.5" ry="22" transform="rotate(90)"/><ellipse cy="-20" rx="10.5" ry="22" transform="rotate(135)"/>
+        <ellipse cy="-20" rx="10.5" ry="22" transform="rotate(180)"/><ellipse cy="-20" rx="10.5" ry="22" transform="rotate(225)"/>
+        <ellipse cy="-20" rx="10.5" ry="22" transform="rotate(270)"/><ellipse cy="-20" rx="10.5" ry="22" transform="rotate(315)"/>
+      </g>
+      <circle r="10.5" fill="#FFF2FB" stroke="#FF9EDB" stroke-width="2.5" filter="url(#glow)"/><circle r="3.7" fill="#FFFFFF"/>
+    </g>
+    <g id="flowerPink">
+      <g fill="url(#petalPink)" stroke="#FFE0F2" stroke-width="1.1" filter="url(#glow)">
+        <ellipse cy="-17" rx="9" ry="19"/><ellipse cy="-17" rx="9" ry="19" transform="rotate(45)"/>
+        <ellipse cy="-17" rx="9" ry="19" transform="rotate(90)"/><ellipse cy="-17" rx="9" ry="19" transform="rotate(135)"/>
+        <ellipse cy="-17" rx="9" ry="19" transform="rotate(180)"/><ellipse cy="-17" rx="9" ry="19" transform="rotate(225)"/>
+        <ellipse cy="-17" rx="9" ry="19" transform="rotate(270)"/><ellipse cy="-17" rx="9" ry="19" transform="rotate(315)"/>
+      </g>
+      <circle r="9" fill="#FFE9AC" stroke="#FFF6D2" stroke-width="2" filter="url(#glow)"/><circle r="3" fill="#FFFFFF"/>
+    </g>
+    <g id="flowerBlue">
+      <g fill="url(#petalBlue)" stroke="#CBF5FF" stroke-width="1.1" filter="url(#glow)">
+        <ellipse cy="-15" rx="8" ry="17"/><ellipse cy="-15" rx="8" ry="17" transform="rotate(60)"/>
+        <ellipse cy="-15" rx="8" ry="17" transform="rotate(120)"/><ellipse cy="-15" rx="8" ry="17" transform="rotate(180)"/>
+        <ellipse cy="-15" rx="8" ry="17" transform="rotate(240)"/><ellipse cy="-15" rx="8" ry="17" transform="rotate(300)"/>
+      </g>
+      <circle r="7.5" fill="#CFFBFF" stroke="#7DF0FF" stroke-width="2" filter="url(#glow)"/><circle r="2.8" fill="#FFFFFF"/>
+    </g>
+  </defs>
+
+  <!-- Soft halo behind the hand-tied bouquet -->
+  <ellipse cx="250" cy="290" rx="172" ry="205" fill="#00BDF9" opacity=".035" filter="url(#softGlow)"/>
+
+  <!-- Slim stems gathered together; no flower pot -->
+  <g stroke="url(#stem)" stroke-width="3.6" stroke-linecap="round" filter="url(#glow)" opacity=".95">
+    <path d="M250 86 C243 235 239 374 248 496"/>
+    <path d="M183 112 C195 245 219 374 248 496"/>
+    <path d="M314 110 C298 243 275 376 248 496"/>
+    <path d="M123 157 C151 278 199 393 248 496"/>
+    <path d="M375 160 C346 282 299 394 248 496"/>
+    <path d="M213 169 C220 285 237 397 248 496"/>
+    <path d="M283 174 C275 289 258 396 248 496"/>
+    <path d="M155 218 C182 307 222 408 248 496"/>
+    <path d="M342 220 C315 307 273 408 248 496"/>
+    <path d="M102 238 C139 334 203 428 248 496"/>
+    <path d="M397 240 C360 333 294 428 248 496"/>
+    <path d="M194 276 C208 349 230 429 248 496"/>
+    <path d="M307 280 C291 356 265 432 248 496"/>
+    <path d="M145 146 C162 267 208 403 248 496" opacity=".75" stroke-width="2.4"/>
+    <path d="M176 119 C190 253 220 400 248 496" opacity=".76" stroke-width="2.4"/>
+    <path d="M210 91 C215 235 235 400 248 496" opacity=".78" stroke-width="2.3"/>
+    <path d="M290 93 C285 238 265 400 248 496" opacity=".78" stroke-width="2.3"/>
+    <path d="M325 121 C310 260 281 402 248 496" opacity=".76" stroke-width="2.4"/>
+    <path d="M360 149 C340 278 294 412 248 496" opacity=".75" stroke-width="2.4"/>
+    <path d="M122 177 C148 305 200 420 248 496" opacity=".68" stroke-width="2.2"/>
+    <path d="M378 178 C350 306 297 421 248 496" opacity=".68" stroke-width="2.2"/>
+    <path d="M160 207 C179 319 218 427 248 496" opacity=".66" stroke-width="2.1"/>
+    <path d="M343 207 C323 320 281 428 248 496" opacity=".66" stroke-width="2.1"/>
+  </g>
+
+  <!-- Small leaves along the stems -->
+  <g fill="#0C7199" stroke="#63EEFF" stroke-width="1.7" filter="url(#glow)">
+    <path d="M192 329 C150 289 119 307 137 340 C154 357 177 345 192 329Z"/>
+    <path d="M294 350 C335 309 370 329 352 360 C334 378 312 365 294 350Z"/>
+    <path d="M216 385 C172 358 144 384 168 410 C185 423 205 403 216 385Z"/>
+    <path d="M276 401 C316 369 346 393 324 420 C306 433 288 416 276 401Z"/>
+    <path d="M236 438 C202 418 181 440 201 460 C216 471 230 452 236 438Z"/>
+  </g>
+  <g stroke="#9AF8FF" stroke-width="1.2" opacity=".8">
+    <path d="M140 337L182 330"/><path d="M349 357L306 352"/><path d="M171 407L210 389"/><path d="M321 418L284 403"/><path d="M204 458L233 441"/>
+  </g>
+
+  <!-- Two overlapping folded-paper panels, gathered like a hand-tied bouquet -->
+  <path d="M116 350 C151 372 189 386 226 376 L250 582 C220 552 196 523 169 483Z" fill="url(#wrap)" stroke="#62F2FF" stroke-width="2.1" filter="url(#glow)"/>
+  <path d="M384 348 C348 372 311 386 274 376 L250 582 C281 552 305 523 332 481Z" fill="url(#wrap)" stroke="#62F2FF" stroke-width="2.1" filter="url(#glow)"/>
+  <path d="M132 363 C166 388 195 396 225 388 L244 556 Q204 519 177 478Z" stroke="#4CB6E8" stroke-width="1.15" opacity=".86"/>
+  <path d="M368 361 C334 388 304 396 275 388 L256 556 Q296 519 323 477Z" stroke="#4CB6E8" stroke-width="1.15" opacity=".86"/>
+  <path d="M141 368 Q181 400 218 398 L232 479 Q190 449 170 421Z" fill="#2D9CC3" opacity=".1"/>
+  <path d="M359 366 Q319 400 282 398 L268 479 Q310 449 330 420Z" fill="#7C7DFF" opacity=".1"/>
+
+  <!-- Large hand-tied satin bow -->
+  <g filter="url(#glow)" stroke="#FFE0F3" stroke-width="1.8" stroke-linejoin="round">
+    <path d="M249 455 C214 426 180 431 190 463 C197 484 224 485 249 466Z" fill="url(#ribbon)"/>
+    <path d="M251 455 C286 426 320 431 310 463 C303 484 276 485 251 466Z" fill="url(#ribbon)"/>
+    <path d="M239 464 L215 516 L245 501 L252 469Z" fill="#F68ACF"/>
+    <path d="M261 464 L285 516 L255 501 L248 469Z" fill="#D879F4"/>
+    <path d="M250 448 C229 459 236 482 251 480 C267 482 274 459 250 448Z" fill="#FFB8E2"/>
+  </g>
+  <path d="M250 459 Q233 464 218 458 M251 459 Q269 464 283 458" stroke="#FFF2FA" stroke-width="1.2" opacity=".85"/>
+
+  <!-- A much denser, rounded crown of 49 small glowing flowers -->
+  <g>
+    <!-- Top cluster -->
+    <use href="#flowerCyan" transform="translate(250 67) scale(.78)"/>
+    <use href="#flowerPink" transform="translate(211 91) scale(.58)"/>
+    <use href="#flowerCyan" transform="translate(250 91) scale(.62)"/>
+    <use href="#flowerBlue" transform="translate(290 93) scale(.58)"/>
+    <!-- Upper row -->
+    <use href="#flowerCyan" transform="translate(171 119) scale(.56)"/>
+    <use href="#flowerPink" transform="translate(209 119) scale(.62)"/>
+    <use href="#flowerCyan" transform="translate(248 121) scale(.66)"/>
+    <use href="#flowerBlue" transform="translate(288 119) scale(.61)"/>
+    <use href="#flowerPink" transform="translate(326 121) scale(.55)"/>
+    <!-- Upper-middle row -->
+    <use href="#flowerBlue" transform="translate(140 146) scale(.52)"/>
+    <use href="#flowerCyan" transform="translate(178 148) scale(.61)"/>
+    <use href="#flowerPink" transform="translate(215 148) scale(.59)"/>
+    <use href="#flowerCyan" transform="translate(252 150) scale(.64)"/>
+    <use href="#flowerPink" transform="translate(289 148) scale(.6)"/>
+    <use href="#flowerCyan" transform="translate(326 148) scale(.58)"/>
+    <use href="#flowerBlue" transform="translate(361 149) scale(.5)"/>
+    <!-- Middle row, overlapping slightly for a fuller shape -->
+    <use href="#flowerPink" transform="translate(123 177) scale(.49)"/>
+    <use href="#flowerCyan" transform="translate(159 177) scale(.57)"/>
+    <use href="#flowerBlue" transform="translate(196 177) scale(.59)"/>
+    <use href="#flowerPink" transform="translate(233 177) scale(.6)"/>
+    <use href="#flowerCyan" transform="translate(270 177) scale(.61)"/>
+    <use href="#flowerPink" transform="translate(307 177) scale(.59)"/>
+    <use href="#flowerCyan" transform="translate(344 177) scale(.56)"/>
+    <use href="#flowerBlue" transform="translate(378 178) scale(.48)"/>
+    <!-- Lower-middle row -->
+    <use href="#flowerCyan" transform="translate(140 207) scale(.5)"/>
+    <use href="#flowerPink" transform="translate(176 207) scale(.56)"/>
+    <use href="#flowerCyan" transform="translate(212 207) scale(.59)"/>
+    <use href="#flowerBlue" transform="translate(249 208) scale(.6)"/>
+    <use href="#flowerPink" transform="translate(286 207) scale(.58)"/>
+    <use href="#flowerCyan" transform="translate(322 207) scale(.56)"/>
+    <use href="#flowerPink" transform="translate(358 208) scale(.49)"/>
+    <!-- Lower row -->
+    <use href="#flowerBlue" transform="translate(161 236) scale(.49)"/>
+    <use href="#flowerCyan" transform="translate(198 236) scale(.55)"/>
+    <use href="#flowerPink" transform="translate(234 236) scale(.57)"/>
+    <use href="#flowerCyan" transform="translate(270 236) scale(.56)"/>
+    <use href="#flowerPink" transform="translate(306 236) scale(.54)"/>
+    <use href="#flowerBlue" transform="translate(342 236) scale(.48)"/>
+    <!-- Narrowing base of the flower crown -->
+    <use href="#flowerCyan" transform="translate(190 265) scale(.46)"/>
+    <use href="#flowerPink" transform="translate(224 265) scale(.5)"/>
+    <use href="#flowerCyan" transform="translate(258 265) scale(.51)"/>
+    <use href="#flowerBlue" transform="translate(292 265) scale(.49)"/>
+    <use href="#flowerPink" transform="translate(326 265) scale(.45)"/>
+    <use href="#flowerPink" transform="translate(211 292) scale(.43)"/>
+    <use href="#flowerCyan" transform="translate(243 292) scale(.46)"/>
+    <use href="#flowerPink" transform="translate(275 292) scale(.45)"/>
+    <use href="#flowerBlue" transform="translate(306 292) scale(.42)"/>
+    <use href="#flowerCyan" transform="translate(229 318) scale(.4)"/>
+    <use href="#flowerPink" transform="translate(257 318) scale(.42)"/>
+    <use href="#flowerCyan" transform="translate(285 318) scale(.4)"/>
+  </g>
+
+  <!-- Tiny glints -->
+  <g filter="url(#glow)">
+    <path d="M79 181l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#9CFBFF"/>
+    <path d="M413 248l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#FF9FD9"/>
+    <path d="M362 93l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z" fill="#8EFAFF"/>
+    <circle cx="99" cy="280" r="2.5" fill="#C5FFFF"/><circle cx="405" cy="318" r="2.5" fill="#FFC6E9"/>
+    <circle cx="177" cy="68" r="2" fill="#FFFFFF"/><circle cx="339" cy="180" r="2" fill="#FFFFFF"/>
+  </g>
+</svg>
